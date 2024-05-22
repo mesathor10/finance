@@ -1,0 +1,99 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav{
+  background: linear-gradient(180deg, rgba(57,57,57,.8) 0%, rgba(25,24,24,.8) 25%, rgba(25,24,24,.8) 80%, rgba(57,57,57,.8) 100%);
+}
+body{
+  height: 100%;
+  background: linear-gradient(180deg, rgb(167, 187, 194) 0%, rgba(33,193,255,1) 25%, rgba(39,154,198,1) 50%, rgba(23,83,105,1) 75%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.nav-item{
+  color: azure;
+  transition: all .2s;
+}
+
+.nav-item:hover{
+  background-color: rgb(230, 230, 230);
+  color: rgb(35, 35, 35);
+}
+
+.nav2 li {
+  padding: .5rem;
+  border-radius: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.nav2 li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav2 li:hover a{
+  color: #0DCAF0;
+}
+
+.nav2 li:hover:not(:nth-child(3)) {
+  background-color: aliceblue;
+  color: #0DCAF0 !important;
+}
+
+.plus{
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.plus .bi:hover{
+    box-shadow: 0px 0px 3px black;
+    /* text-shadow: 0px 2px 14px black; */
+}
+
+.s1::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+.l1, .s1, .s2{
+  box-shadow: 0px 0px 20px rgb(32, 29, 29);
+}
+
+.r-bg, .y-bg, .b-bg, .g-bg{
+  transition: all .3s;
+}
+
+.r-bg:hover{
+  transform: translate(1.1);
+  box-shadow: 0px 0px 3px blue;
+}
+
+.add{
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(27, 27, 27, 0.582);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.goo{
+  color: rgba(237, 65, 65, 0.505);
+}
