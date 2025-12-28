@@ -15,7 +15,7 @@ function Signup() {
     e.preventDefault();
     try {
       axios
-        .post("http://localhost:8000/auth/signup", {
+        .post("https://finance-8ze7.onrender.com/auth/signup", {
           Name: Name,
           Email: Email,
           Mobile: Mobile,
