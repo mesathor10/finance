@@ -55,7 +55,7 @@ function Expense() {
 
   const fetchExp = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/user/expense/get");
+      const res = await axios.get("https://finance-8ze7.onrender.com/user/expense/get");
       const data = res.data.msg;
       dispatch({ type: "SET_DATAS", payload: data });
       console.log(data);
@@ -125,7 +125,7 @@ function Expense() {
   const delExp = async (id) => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/user/expense/delete/${id}`
+        `https://finance-8ze7.onrender.com/user/expense/delete/${id}`
       );
       console.log(res.data);
       dispatch({
