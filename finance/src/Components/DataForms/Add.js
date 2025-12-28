@@ -16,7 +16,7 @@ function AddInc({ onDataLoad }) {
   const AddIncData = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/user/income", {
+      .post("https://finance-8ze7.onrender.com/user/income", {
         Name,
         Amount,
         Source,
@@ -134,7 +134,7 @@ function AddBug({ onDataLoad }) {
   const AddBugData = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/user/budget", {
+      .post("https://finance-8ze7.onrender.com/user/budget", {
         Category,
         Amount,
         StartDate,
@@ -247,7 +247,7 @@ function AddExp({ onDataLoad }) {
   const AddExpData = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/user/expense", {
+      .post("https://finance-8ze7.onrender.com/user/expense", {
         Name,
         Amount,
         Category,
@@ -361,7 +361,7 @@ function AddGoal({ onDataLoad }) {
   const AddGoalData = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/user/goal", {
+      .post("https://finance-8ze7.onrender.com/user/goal", {
         Name,
         TargAmount,
         CurrAmount,
