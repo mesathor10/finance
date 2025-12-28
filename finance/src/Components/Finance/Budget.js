@@ -55,7 +55,7 @@ function Budget() {
 
   const fetchBug = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/user/budget/get");
+      const res = await axios.get("https://finance-8ze7.onrender.com/user/budget/get");
       const data = res.data.msg;
       dispatch({ type: "SET_DATAS", payload: data });
       console.log(data);
@@ -125,7 +125,7 @@ function Budget() {
   const delBug = async (id) => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/user/budget/delete/${id}`
+        `https://finance-8ze7.onrender.com/user/budget/delete/${id}`
       );
       console.log(res.data);
       dispatch({
