@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 function Logout() {
-  axios.get("http://localhost:8000/auth/logout").then((res) => {
+  axios.get("https://finance-8ze7.onrender.com/auth/logout").then((res) => {
     console.log("logged out", res.data);
   });
 
