@@ -46,7 +46,7 @@ function Income() {
 
   const fetchInc = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/user/income/get");
+      const res = await axios.get("https://finance-8ze7.onrender.com/user/income/get");
       const data = res.data.msg;
       dispatch({ type: "SET_DATAS", payload: data });
       console.log(data);
@@ -116,7 +116,7 @@ function Income() {
   const delInc = async (id) => {
     try {
       const res = await axios.delete(
-        `http://localhost:8000/user/income/delete/${id}`
+        `https://finance-8ze7.onrender.com/user/income/delete/${id}`
       );
       console.log(res.data.msg);
       dispatch({
