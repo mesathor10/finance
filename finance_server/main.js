@@ -8,7 +8,7 @@ const server = express();
 
 server.use(express.json());
 server.use(cors({
-  origin: "https://finance-eo4fluox6-mesathor10s-projects.vercel.app/"
+  origin: "https://finance-git-main-mesathor10s-projects.vercel.app"
 }));
 server.use("/user", finRouter);
 server.use("/auth", authrouter);
