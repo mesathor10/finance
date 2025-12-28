@@ -12,7 +12,7 @@ function ForgetPass() {
 
     try {
       await axios
-        .post("http://localhost:8000/auth/forgot", { Email })
+        .post("https://finance-8ze7.onrender.com/auth/forgot", { Email })
         .then((res) => {
           console.log(res);
           if (res.data.status) {
