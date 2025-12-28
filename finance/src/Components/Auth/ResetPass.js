@@ -13,7 +13,7 @@ function Resetpass() {
 
     try {
       await axios
-        .post("http://localhost:8000/auth/reset/" + token, { Password })
+        .post("https://finance-8ze7.onrender.com/auth/reset/" + token, { Password })
         .then((res) => {
           console.log(res);
           if (res.data.status) {
