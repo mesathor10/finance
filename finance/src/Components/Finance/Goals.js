@@ -28,7 +28,7 @@ function Goals() {
 
   const fetchGoal = async () => {
     await axios
-      .get("http://localhost:8000/user/goal/get")
+      .get("https://finance-8ze7.onrender.com/user/goal/get")
       .then((res) => {
         const data = res.data.msg;
         console.log(data);
@@ -110,7 +110,7 @@ function Goals() {
   };
 
   const delGoal = (id) => {
-    axios.delete(`http://localhost:8000/user/goal/delete/${id}`).then((res) => {
+    axios.delete(`https://finance-8ze7.onrender.com/user/goal/delete/${id}`).then((res) => {
       console.log(res.data.msg);
       setDatas((prevDatas) => prevDatas.filter((item) => item._id !== id));
     });
