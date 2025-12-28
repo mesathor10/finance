@@ -8,7 +8,7 @@ async function Notification(userId) {
     // Fetch user data
 
     await axios
-      .get(`http://localhost:8000/auth/userdata/${userId}`)
+      .get(`https://finance-8ze7.onrender.com/auth/userdata/${userId}`)
       .then((res) => {
         const datas = res.data.msg;
         userName = datas[0].Name;
@@ -17,7 +17,7 @@ async function Notification(userId) {
     console.log(userId, "not run");
     console.log("b", userName, Email);
 
-    await axios.get("http://localhost:8000/user/goal/get").then((res) => {
+    await axios.get("https://finance-8ze7.onrender.com/user/goal/get").then((res) => {
       console.log("a", res);
       const datas = res.data.msg;
       console.log(datas);
@@ -27,13 +27,13 @@ async function Notification(userId) {
     console.log(DueDate);
 
     const budgetsResponse = await axios.get(
-      "http://localhost:8000/user/budget/get"
+      "https://finance-8ze7.onrender.com/user/budget/get"
     );
     const budgetsData = budgetsResponse.data.msg;
     DueDate.push(...budgetsData.map((e) => new Date(e.EndDate).toDateString()));
 
     // Construct the URL with query parameters
-    const url = `http://localhost:8000/auth/notifi?DueDate=${encodeURIComponent(
+    const url = `https://finance-8ze7.onrender.com/auth/notifi?DueDate=${encodeURIComponent(
       JSON.stringify(DueDate)
     )}&User=${encodeURIComponent(userName)}&Email=${encodeURIComponent(Email)}`;
 
