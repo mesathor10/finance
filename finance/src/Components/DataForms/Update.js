@@ -19,7 +19,7 @@ function UptInc({ onDataLoad }) {
     event.preventDefault();
     console.log(id);
     axios
-      .post(`http://localhost:8000/user/income/update/${id}`, {
+      .post(`https://finance-8ze7.onrender.com/user/income/update/${id}`, {
         Name,
         Amount,
         Source,
@@ -146,7 +146,7 @@ function UptBug({ onDataLoad }) {
   const UptBugData = (id, e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:8000/user/budget/update/${id}`, {
+      .post(`https://finance-8ze7.onrender.com/user/budget/update/${id}`, {
         Category,
         Amount,
         StartDate,
@@ -274,7 +274,7 @@ function UptExp({ onDataLoad }) {
   const UptExpData = (id, e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:8000/user/expense/update/${id}`, {
+      .post(`https://finance-8ze7.onrender.com/user/expense/update/${id}`, {
         Name,
         Amount,
         Category,
@@ -403,7 +403,7 @@ function UptGoal({ onDataLoad }) {
   const UptGoalData = (id, e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:8000/user/goal/update/${id}`, {
+      .post(`https://finance-8ze7.onrender.com/user/goal/update/${id}`, {
         Name,
         TargAmount,
         CurrAmount,
