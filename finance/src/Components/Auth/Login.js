@@ -30,7 +30,7 @@ function Login() {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8000/auth/login", { Email, Password })
+      .post("https://finance-8ze7.onrender.com/auth/login", { Email, Password })
       .then((res) => {
         console.log(res.data.msg);
 
